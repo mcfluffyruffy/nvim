@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 vim.keymap.set({ "i", "x", "n", "s" }, "<c-s>", "<cmd>update<cr><esc>", { desc = "save file" })
+vim.o.swapfile = false
 
 require("vim-options")
 require("lazy").setup("plugins")
