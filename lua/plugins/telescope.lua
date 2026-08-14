@@ -15,7 +15,10 @@ return {
                 "<cmd>Telescope undo<cr>",
                 desc = "undo history",
             },
+            { "<C-p>", "<cmd>Telescope find_files<cr>", desc = "find files" },
+            { "<leader>gg", "<cmd>Telescope live_grep<cr>", desc = "live grep" },
         },
+
         config = function()
             require("telescope").setup({
                 extensions = {
